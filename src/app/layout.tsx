@@ -1,9 +1,9 @@
 import NavBar from '@/components/nav_bar'
 import './globals.css'
-import { Inter } from 'next/font/google'
+import { Space_Grotesk } from 'next/font/google'
 import Footer from '@/components/footer'
 
-const inter = Inter({ subsets: ['latin'] })
+const spaceGrotesk = Space_Grotesk({ subsets: ['latin'] })
 
 export const metadata = {
   title: 'Create Next App',
@@ -17,7 +17,7 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body className={`${inter.className} bg-[#161C30]`}>
+      <body className={`${spaceGrotesk.className} bg-[#161C30]`}>
         <NavBar />
         {children}
         <Footer />
