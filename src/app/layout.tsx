@@ -17,10 +17,11 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body className={`${spaceGrotesk.className} bg-[#161C30]`}>
-        <NavBar />
-        {children}
-        <Footer />
+      <body className={spaceGrotesk.className}>
+        <div className='bg-[#161C30] text-sm md:text-base'>
+          <NavBar />
+          {children}
+        </div>
       </body>
     </html>
   )
