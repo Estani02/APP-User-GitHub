@@ -17,7 +17,7 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body className={spaceGrotesk.className}>
+      <body className={`${spaceGrotesk.className} bg-blue-50 dark:bg-[#161C30] text-sm md:text-base`}>
         <NavBar />
         {children}
       </body>

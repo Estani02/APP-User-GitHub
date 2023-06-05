@@ -3,9 +3,9 @@ import React from 'react'
 
 const NavBar = () => {
   return (
-    <nav className='flex justify-between items-center p-3 md:py-5 px-3 bg-blue-950 text-blue-200 text-sm md:text-base'>
-      <h1 className='font-semibold'>devfinder</h1>
-      <button className='flex flex-row items-center font-medium gap-2'>
+    <nav className='flex justify-between items-center p-3 md:py-5 px-3 text-blue-950 dark:bg-blue-950 dark:text-blue-200 text-base md:text-xl lg:text-2xl font-semibold md:font-bold'>
+      <h1 className='uppercase'>devfinder</h1>
+      <button className='flex flex-row items-center gap-2'>
         LIGHT
         <SunIcon />
       </button>

@@ -22,7 +22,7 @@ export default function Home() {
   }
 
   return (
-    <div className="flex flex-col justify-center items-center gap-6 w-full px-6 bg-[#161C30] text-sm md:text-base">
+    <div className="flex flex-col justify-center items-center gap-6 w-full px-6">
       <SearchBar getUsers={getUsers} />
       {user ?
         <Card user={user} /> : user === null ?
