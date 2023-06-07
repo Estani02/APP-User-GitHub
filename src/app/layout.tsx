@@ -16,7 +16,7 @@ export default function RootLayout({
   children: React.ReactNode
 }) {
   return (
-    <html lang="en">
+    <html lang="en" className='dark'>
       <body className={`${spaceGrotesk.className} bg-blue-50 dark:bg-[#161C30] text-sm md:text-base`}>
         <NavBar />
         {children}
