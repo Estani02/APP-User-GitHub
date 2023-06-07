@@ -12,7 +12,7 @@ interface PropsUser {
 
 const Card = ({ user }: PropsUser) => {
   return (
-    <section className='bg-white shadow-md dark:shadow-none dark:bg-[#202A49] flex flex-col md:flex-row gap-5 px-5 py-5 md:p-10 rounded-lg w-full md:max-w-[700px] lg:max-w-[850px] mb-28'>
+    <section className='bg-white shadow-md dark:shadow-none dark:bg-[#202A49] flex flex-col md:flex-row md:justify-center gap-5 px-5 py-5 md:p-10 rounded-lg w-full md:max-w-[700px] lg:max-w-[850px] mb-28 transition-colors duration-300'>
       <Image src={user.avatar_url} width={80} height={80} alt="Avatar" className='rounded-[50%] h-20 w-20 hidden md:block' />
       <div className='md:flex md:flex-col gap-6'>
         <article className='flex flex-row gap-3'>
@@ -54,8 +54,8 @@ const Card = ({ user }: PropsUser) => {
             <span className={`mr-2 ${user.location ? 'text-blue-950 dark:text-white' : 'text-gray-400'}`}>{user.location || "Not Available"}</span>
           </div>
           <div className='flex flex-row items-center gap-2'>
-            <LinkIcon className='text-blue-950 dark:text-white fill-blue-950' />
-            <a href={user.html_url} target='_blank' className='mr-2 truncate text-blue-950 dark:text-white'>{user.html_url}</a>
+            <LinkIcon className='text-blue-950 dark:fill-white fill-blue-950' />
+            <a href={user.html_url} target='_blank' className='mr-2 truncate text-blue-950 dark:text-white hover:text-blue-700 dark:hover:text-slate-300 transition-colors duration-300'>{user.html_url}</a>
           </div>
           <div className='flex flex-row items-center gap-2'>
             <TwitterIcon className='dark:fill-white fill-blue-950' />
