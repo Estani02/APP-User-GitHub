@@ -26,7 +26,7 @@ export default function Home() {
       <SearchBar getUsers={getUsers} />
       {user ?
         <Card user={user} /> : user === null ?
-          <div className=" mt-20 flex justify-center items-center text-white font-bold text-xl md:text-2xl">
+          <div className=" mt-20 flex justify-center items-center text-blue-950 dark:text-white font-bold text-xl md:text-2xl">
             Username {`"${username}"`} not found
           </div> : <></>
       }
