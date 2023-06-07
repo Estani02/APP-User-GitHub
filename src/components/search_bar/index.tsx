@@ -29,7 +29,7 @@ const SearchBar = ({ getUsers }: Props) => {
 
 
   return (
-    <form onSubmit={handleSubmit} className='p-2 bg-white shadow-md dark:shadow-none dark:bg-[#202A49] rounded-lg flex flex-row items-center justify-center gap-2 md:h-[3.5rem] lg:h--[4.5rem] w-full md:max-w-[700px] mt-6'>
+    <form onSubmit={handleSubmit} className='p-2 bg-white shadow-md dark:shadow-none dark:bg-[#202A49] rounded-lg flex flex-row items-center justify-center gap-2 md:h-[3.5rem] lg:h--[4.5rem] w-full md:max-w-[700px] mt-6 transition-colors duration-300'>
       <span>
         <SearchIcon className='fill-[#1758B4]' />
       </span>
